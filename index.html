@@ -40,7 +40,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f3f0;color:var(--black)
 .formula-box{display:inline-flex;align-items:center;gap:14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:14px 20px;margin-bottom:36px;}
 .formula-txt{font-size:21px;font-weight:700;letter-spacing:.04em;}
 .formula-sub{font-size:11px;color:var(--g500);line-height:1.55;}
-.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:44px;} @media(max-width:480px){.stats{grid-template-columns:1fr 1fr;}}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:44px;}
 .scard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:16px;}
 .snum{font-size:22px;font-weight:900;color:#ffffff;margin-bottom:4px;}
 .snum.red{color:var(--crimson-l);}
@@ -175,14 +175,77 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f3f0;color:var(--black)
 .rfooter strong{color:var(--g500);}
 
 @media(max-width:768px){
+  /* HEADER */
+  .lhdr{padding:12px 16px;}
+  .logo-pill{padding:5px 10px;}
+  .logo-pill img{height:22px;}
+  .club-name{font-size:11px;}
+  .times{font-size:13px;}
+  .hdr-right{display:none;}
+  .collab > span:last-child{display:none;}
+
+  /* HERO LAYOUT */
   .hero{grid-template-columns:1fr;}
-  .hleft{padding:48px 28px;} .htitle{font-size:30px;}
-  .hright{padding:36px 28px;}
-  .stats{grid-template-columns:1fr 1fr;}
-  .sb-grid{grid-template-columns:1fr;}
-  .pcards{grid-template-columns:1fr;}
-  .rbody{padding:36px 20px;}
+  .hleft{padding:36px 20px 32px;}
+  .htitle{font-size:28px;line-height:1.2;}
+  .hsub{font-size:13px;margin-bottom:24px;}
+  .tag{margin-bottom:16px;}
+
+  /* FORMULA — wrap allowed on mobile */
+  .formula-box{flex-direction:column;align-items:flex-start !important;gap:8px !important;padding:14px 16px;margin-bottom:24px;}
+  .formula-txt{font-size:18px !important;white-space:normal !important;}
+  .formula-sub{font-size:11px;white-space:normal !important;line-height:1.6;}
+
+  /* STATS */
+  .stats{grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px;}
+  .scard{padding:14px 12px;}
+  .snum{font-size:19px;}
+  .slbl{font-size:10px;}
+
+  /* START BTN */
+  .start-btn{width:100%;justify-content:center;padding:14px 20px;font-size:14px;}
+
+  /* RIGHT PANEL */
+  .hright{padding:28px 20px;}
+  .mblocks{gap:10px;margin-bottom:22px;}
+  .mblock{padding:14px 16px;}
+  .mb-name{font-size:13px;}
+  .mb-desc{font-size:11px;}
+  .mb-score{font-size:11px;}
+  .grade-prev{gap:8px;margin-bottom:20px;}
+  .gpc{padding:12px 8px;}
+  .gpg{font-size:18px;}
+  .gpn{font-size:11px;}
+  .gpr{font-size:10px;}
+
+  /* SURVEY */
+  .shdr{padding:0 16px;}
   .scard{padding:28px 20px;}
+  .qtxt{font-size:16px;margin-bottom:20px;}
+  .obtn{padding:13px 16px;font-size:13px;}
+
+  /* RESULT */
+  .rhdr{padding:14px 16px;}
+  .rlogo img{height:20px;}
+  .rlogo-txt{font-size:11px;}
+  .rbody{padding:32px 16px;}
+  .rghero{margin-bottom:36px;}
+  .rgbadge{width:120px;height:120px;}
+  .gnum{font-size:42px;}
+  .rname{font-size:20px;}
+  .rscore-disp{font-size:13px;}
+  .rdesc{font-size:13px;}
+  .sb-grid{grid-template-columns:1fr;gap:10px;}
+  .sbnum{font-size:28px;}
+  .ministry-row{gap:6px;}
+  .min-badge{padding:6px 10px;}
+  .min-name{font-size:11px;}
+  .min-role{font-size:10px;}
+  .pcards{grid-template-columns:1fr;}
+  .pcard{padding:16px;}
+  .pcard-title{font-size:13px;}
+  .pcard-desc{font-size:12px;}
+  .pcard-link{font-size:11px;}
 }
 </style>
 </head>
